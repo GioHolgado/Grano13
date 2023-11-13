@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Grano 13</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="function.js"></script>
+</head>
+<body onload="start()">
+    <!-- <input type="button" value="AGGIUNGI + ">
+    <input type="button" value="ELIMINA -"> -->
+    <!-- <input type="button" value="STAMPA">
+    <input type="button" value="FRITTI">
+    <input type="button" value="BEVANDE">
+    <input type="button" value="PALA">
+    <select name="orari">
+        <option>19:00</option>
+        <option>19:15</option>
+        <option>19:30</option>
+        <option>19:45</option>
+        <option>20:00</option>
+        <option>20:15</option>
+        <option>20:30</option>
+        <option>20:45</option>
+        <option>21:00</option>
+        <option>21:15</option>
+        <option>21:30</option>
+        <option>21:45</option>
+    </select>  -->
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="indexvers1.html">HOME</a>
+                <a href="#">PRODOTTI</a>
+                <a href="#">ORDINI</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="box1">
+            <div id="pulpala" onclick="pala()">PALA</div>
+            <div id="pulfritti" onclick="fritti()">FRITTI</div>
+            <div id="pulbev" onclick="bevande()">BEVANDE</div>
+        </div>
+
+        <div class="box2" id="pala">
+            <div class="box" onclick="apriVelo('intera')">
+                <h3>INTERA</h3>
+                
+            </div>
+
+            <div class="box" onclick="apriVelo('mezzaPala')">
+                <h3>MEZZA PALA</h3>
+                
+            </div>
+
+            <div class="box" onclick="apriVelo('unTerzo')">
+                <h3>UN TERZO</h3>
+                
+            </div>
+
+            <!-- <div class="box">
+                <h3>PRODOTTO</h3>
+                <h3>PREZZO €</h3>
+            </div> -->
+        </div>
+
+        <div class="box2 dnone" id="fritti">
+            <div class="box">
+                <h3>RAGÙ CLASSICO</h3>
+                <h3>1.5 €</h3>
+            </div>
+
+            <div class="box">
+                <h3>CACIO E PEPE</h3>
+                <h3>1.5 €</h3>
+            </div>
+
+            <div class="box">
+                <h3>GORGONZOLA E RADICCHIO</h3>
+                <h3>1.5 €</h3>
+            </div>
+
+            <div class="box">
+                <h3>TARTUFO,SALSICCIA & FUNGHI</h3>
+                <h3>1.5 €</h3>
+            </div>
+
+            <div class="box">
+                <h3>VEGAN</h3>
+                <h3>1.5 €</h3>
+            </div>
+
+            <div class="box">
+                <h3>NDUJA</h3>
+                <h3>1.5 €</h3>
+            </div>
+
+
+            <div class="box">
+                <h3>CROCCHETTA DI  PATATE</h3>
+                <h3>1.5 €</h3>
+            </div>
+
+            <div class="box">
+                <h3>FIORI DI ZUCCA</h3>
+                <h3>2.5 €</h3>
+            </div>
+        </div>
+
+        <div class="box2 dnone" id="bevande">
+            <div class="box">
+                <h3>COCACOLA ZERO 33CL</h3>
+                <h3>2.5€</h3>
+            </div>
+
+            <div class="box">
+                <h3>FANTA 33CL</h3>
+                <h3>2.5€</h3>
+            </div>
+
+            <div class="box">
+                <h3>COCACOLA ZERO 45CL</h3>
+                <h3>3€</h3>
+            </div>
+
+            <div class="box">
+                <h3>COCACOLA 1.5L</h3>
+                <h3>4€</h3>
+            </div>
+
+
+            <div class="box">
+                <h3>CHINOTTO NERI</h3>
+                <h3>2€</h3>
+            </div>
+
+            <div class="box">
+                <h3>CHINOTTO LURISIA</h3>
+                <h3>2.5€</h3>
+            </div>
+
+            <div class="box">
+                <h3>LURISIA ARANCIA ROSSA/LIMONATA</h3>
+                <h3>2.5€</h3>
+            </div>
+
+            <div class="box">
+                <h3>THE LIMONE</h3>
+                <h3>2.5€</h3>
+            </div>
+
+            <div class="box">
+                <h3>THE PESCA</h3>
+                <h3>2.5€</h3>
+            </div>
+
+            <div class="box">
+                <h3>HEINEKEN 33CL</h3>
+                <h3>2.5€</h3>
+            </div>
+
+            <div class="box">
+                <h3>HEINEKEN 66CL</h3>
+                <h3>3.5€</h3>
+            </div>
+
+            <div class="box">
+                <h3>MENEBREA 66CL</h3>
+                <h3>4€</h3>
+            </div>
+
+            <div class="box">
+                <h3>PERONI 33CL</h3>
+                <h3>2€</h3>
+            </div>
+
+            <div class="box">
+                <h3>ICHNUSA NON FILTRATA 33CL</h3>
+                <h3>3€</h3>
+            </div>
+
+            <div class="box">
+                <h3>ICHNUSA NON FILTRATA 50CL</h3>
+                <h3>4€</h3>
+            </div>
+
+            <div class="box">
+                <h3>COCACOLA 1.5L</h3>
+                <h3>4€</h3>
+            </div>
+
+            <div class="box">
+                <h3>BIRRA ARTIGIANALE</h3>
+                <h3>4€</h3>
+            </div>
+
+            <div class="box">
+                <h3>VINO FALANGHINA 25CL</h3>
+                <h3>3€</h3>
+            </div>
+
+            <div class="box">
+                <h3>VINO AGLIANICO 25CL</h3>
+                <h3>3€</h3>
+            </div>
+
+        </div>
+
+        <div class="box3">
+            <div class="boxtotale">
+                <div class="carrello">
+                    <div class="prodottoCarrello">
+                       <h2>Prodotto 1</h2> 
+                       <span>Totale</span>
+                    </div>
+                    <div class="prodottoCarrello">
+                        <h2>Prodotto 1</h2> 
+                        <span>Totale</span>
+                     </div>
+                     <div class="prodottoCarrello">
+                        <h2>Prodotto 1</h2> 
+                        <span>Totale</span>
+                     </div>
+                </div>
+                <div id="totale">
+                    <span id="totCarrello">Tot €</span>
+                </div>
+                <input type="button" class="button" id="stampa" onclick="Stampa()" value="STAMPA">
+            </div>
+        </div>
+    </div>
+    <div id="velo" class="dnone"></div>
+    <div id="screen" class="dnone">
+            <input type="radio" name="Funghi" id="">Funghi<br>
+            <input type="radio" name="Funghi Bianca" id="">Funghi Bianca<br>
+    </div>
+</body>
+</html>
