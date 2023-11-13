@@ -6,19 +6,9 @@ function start(){
     screen=document.getElementById('screen');
     velo.addEventListener('click',chiudoVelo)
 }
-function pala(){
+function ChangeView(View){
     box.forEach((e)=>e.classList.add('dnone'))
-    document.getElementById('pala').classList.remove('dnone');
-}
-
-function fritti(){
-    box.forEach((e)=>e.classList.add('dnone'))
-    document.getElementById('fritti').classList.remove('dnone');
-}
-
-function bevande(){
-    box.forEach((e)=>e.classList.add('dnone'))
-    document.getElementById('bevande').classList.remove('dnone');
+    document.getElementById(View).classList.remove('dnone');
 }
 
 function apriVelo(pizza){
