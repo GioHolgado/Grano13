@@ -41,12 +41,13 @@ nav ul li a{
 
 .container{
     width: 100%;
+    height: calc(100% - 50px);
 }
 
 .box1{
     width: 20%;
     float: left;
-    height: 700px;
+    height: 850px;
     margin-top: 15px;
     background-color: rgb(189, 71, 71);
 }
@@ -62,7 +63,7 @@ nav ul li a{
 .box2{
     width: 50%;
     float: left;
-    height: 700px;
+    height: 850px;
     text-align: center;
     
 }
@@ -70,14 +71,14 @@ nav ul li a{
 .box3{
     width: 30%;
     float: left;
-    height: 700px;
+    height:850px;
     
 }
 
 div.box3 div.boxtotale{
     border: 2px solid orange;
-    width: 85%;
-    height: 470px;
+    width: 100%;
+    height: 100%;
 }
 
 div.boxtotale{
